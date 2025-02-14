@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXERCISE 3</title>
+
+	<!-- BOOTSTRAP -->
+	<!-- CSS -->
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- JS -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<div class="container mt-5">
+		<h1>GREETING APP</h1>
+
+		<form> 
+			<label for="">ENTER NAME:</label>
+			<input type="text" id="first-name">	<!-- id here must be the same  as the id in line 37-->
+
+			<h5 id="guest-name">WELCOME GUEST!</h5>
+
+			<button type="button" class="btn-btn-warning" onclick="greet()">GREET</button>
+			<button type="button" class="btn-btn-primary" onclick="window.location.reload()">REFRESH</button>
+
+		</form>
+
+		<script type="text/javascript">
+			function greet() {
+				var name = document.getElementById('first-name').value; // id must be the same as the id in line 25
+
+				document.getElementById('guest-name').innerHTML = 'welcome,' + name;
+				// id must be the same as the id in line 27
+				// name in line 38 must be the same as the variable name in line 36
+
+			}
+
+		</script>
+
+		<footer></footer>
+		<div class="footer">
+			<hr><p>	&#169; AY 2025 | ICT 9-Ruby | EXERCISE 3: FUNCTIONS | ZIPPORAH ALVARADO ALA |</p>
+		</div>
+</head>
+<body>
+
+</body>
+</html>
